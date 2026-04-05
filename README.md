@@ -1,5 +1,5 @@
 
-````
+
 # 🔴 Advanced Active Directory Red Teaming & CRTP Notes
 
 ![Red Team](https://img.shields.io/badge/Category-Red_Teaming-darkred?style=flat-square)
@@ -26,7 +26,7 @@ crtp-notes/
     ├── 03-Privilege-Escalation.md # LPE, ACL Abuse, Constrained/Unconstrained Delegation
     ├── 04-Kerberos-Attacks.md     # Targeted Roasting, Native .NET TGS Requests
     └── 05-Persistence.md          # Diamond/Golden Tickets (AES), DSRM, SDProp
-````
+```
 
 ## 🛠️ Core Toolkit Referenced
 
