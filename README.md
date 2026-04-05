@@ -66,7 +66,7 @@ flowchart LR
 
 -------------------------------------------------
 ## 📚 Detailed Notes
-A comprehensive, OPSEC-focused repository detailing advanced Active Directory exploitation techniques, lateral movement strategies, and domain dominance paths. These notes were compiled during the preparation for the **Certified Red Team Professional (CRTP)** examination and have been upgraded to reflect modern EDR-evasion and Living off the Land (LotL) methodologies.
+A comprehensive, OPSEC-focused repository detailing an end-to-end Active Directory attack simulation. This playbook demonstrates advanced exploitation techniques, lateral movement strategies, and domain dominance paths executed within a custom-built, segmented enterprise lab. All tactics have been engineered to reflect modern EDR-evasion and Living off the Land (LotL) methodologies.
 
 ## 🎯 Repository Philosophy
 
@@ -78,7 +78,7 @@ Unlike standard cheat sheets that rely heavily on dropping noisy binaries (e.g.,
 ## 📂 Repository Structure
 
 ```text
-crtp-notes/
+AD-Offensive-Attack-Simulation/
 ├── README.md
 └── AD-Cheatsheet/
     ├── 01-Enumeration.md          # Stealth ADSI, PowerView, BloodHound OPSEC
@@ -106,9 +106,7 @@ crtp-notes/
 > All techniques, scripts, and commands provided in this repository are intended strictly for use in closed laboratory environments or during authorized penetration testing / Red Team engagements where explicit written consent has been granted by the infrastructure owner. The author assumes no liability and is not responsible for any misuse or damage caused by the information provided.
 
 ## 📚 Acknowledgments
-
-- Massive respect to [Altered Security](https://www.alteredsecurity.com/) for the exceptional **CRTP (Certified Red Team Professional)** boot camp and lab environment.
-    
+   
 - Inspiration drawn from the global InfoSec community, BloodHound Gang, and various open-source Red Team developers.
     
 
