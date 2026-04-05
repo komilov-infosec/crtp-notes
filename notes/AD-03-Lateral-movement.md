@@ -1,7 +1,7 @@
 
 # 🔀 Lateral Movement (Advanced Red Team)
 
-> **For lab environments, authorized penetration testing, and CRTP preparation only.**
+> **For lab environments, authorized penetration testing only.**
 > 
 > _Focus: OPSEC, Living off the Land (LotL), Fileless Execution, and EDR Evasion._
 
