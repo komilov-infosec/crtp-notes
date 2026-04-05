@@ -1,7 +1,7 @@
 
 # 🔍Active Directory Enumeration (Advanced Red Team )
 
-> **For lab environments, authorized penetration testing, and CRTP preparation only.**
+> **For lab environments, authorized penetration testing only.**
 > 
 > _Focus: Living off the Land (LotL), ADSI, LDAP Filters, and Evasion over Noise._
 
