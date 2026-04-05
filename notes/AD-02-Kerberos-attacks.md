@@ -1,6 +1,6 @@
 # 🎟️ Kerberos Attacks (Advanced Red Team )
 
-> **For lab environments, authorized penetration testing, and CRTP preparation only.**
+> **For lab environments, authorized penetration testing only.**
 > 
 > _Focus: OPSEC, Native API (LotL), Encryption Bypasses, and Active Directory Abuse._
 
