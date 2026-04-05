@@ -1,7 +1,7 @@
 
 # 🔒 Persistence & Domain Dominance (Advanced Red Team )
 
-> **For lab environments, authorized penetration testing, and CRTP preparation only.**
+> **For lab environments, authorized penetration testing only.**
 > 
 > _Focus: EDR Evasion, OPSEC, Cryptographic Downgrade Avoidance, and Stealth._
 
