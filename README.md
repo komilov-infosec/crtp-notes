@@ -76,16 +76,15 @@ Unlike standard cheat sheets that rely heavily on dropping noisy binaries (e.g.,
 * **OPSEC Awareness:** Prioritizing AES-256 over RC4, avoiding Event ID 4688 (Process Creation) anomalies, and executing targeted enumeration rather than noisy domain-wide scans.
 
 ## 📂 Repository Structure
-
-```text
+```
 AD-Offensive-Attack-Simulation/
 ├── README.md
 └── notes/
-    ├── 01-Enumeration.md          # Stealth ADSI, PowerView, BloodHound OPSEC
-    ├── 02-Lateral-Movement.md     # DCOM, WinRM, WMI, Pass-the-Ticket
-    ├── 03-Privilege-Escalation.md # LPE, ACL Abuse, Constrained/Unconstrained Delegation
-    ├── 04-Kerberos-Attacks.md     # Targeted Roasting, Native .NET TGS Requests
-    └── 05-Persistence.md          # Diamond/Golden Tickets (AES), DSRM, SDProp
+    ├── AD-01-Enumeration.md          # Stealth ADSI, PowerView, BloodHound OPSEC
+    ├── AD-02-Kerberos-Attacks.md     # Targeted Roasting, Native .NET TGS Requests
+    ├── AD-03-Lateral-Movement.md     # DCOM, WinRM, WMI, Pass-the-Ticket
+    ├── AD-04-Privilege-Escalation.md # LPE, ACL Abuse, Constrained/Unconstrained Delegation
+    └── AD-05-Persistence.md          # Diamond/Golden Tickets (AES), DSRM, SDProp
 ```
 
 ## 🛠️ Core Toolkit Referenced
