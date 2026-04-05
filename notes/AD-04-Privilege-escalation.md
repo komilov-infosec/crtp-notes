@@ -1,7 +1,7 @@
 
 # ⬆️ Privilege Escalation & Domain Dominance (Advanced Red Team )
 
-> **For lab environments, authorized penetration testing, and CRTP preparation only.**
+> **For lab environments, authorized penetration testing only.**
 > 
 > _Focus: EDR Evasion, OPSEC, Native API Abuse, and Minimal Disk Footprint._
 
