@@ -1,7 +1,6 @@
 
 
-# 🔴 Advanced Active Directory Red Teaming & CRTP Notes
-
+# 🔴 Advanced Active Directory Exploitation & Red Team Notes
 ![Red Team](https://img.shields.io/badge/Category-Red_Teaming-darkred?style=flat-square)
 ![Active Directory](https://img.shields.io/badge/Target-Active_Directory-blue?style=flat-square)
 ![OPSEC](https://img.shields.io/badge/OPSEC-Strict-green?style=flat-square)
