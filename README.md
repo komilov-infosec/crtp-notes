@@ -1,6 +1,6 @@
 
 
-# 🔴 Advanced Active Directory Attack Simulation (Enterprice Lab)
+# 🔴 Advanced Active Directory Attack Simulation (Enterprise Lab)
 ![Red Team](https://img.shields.io/badge/Category-Red_Teaming-darkred?style=flat-square)
 ![Active Directory](https://img.shields.io/badge/Target-Active_Directory-blue?style=flat-square)
 ![OPSEC](https://img.shields.io/badge/OPSEC-Strict-green?style=flat-square)
@@ -8,7 +8,7 @@
 
 ## 🔬 Enterprise Attack Simulation (Controlled Lab Environment)
 
-> **Self-Hosted Enterprice Lab (Cyber Range):** To truly understand Active Directory beyond just theoretical attacks, I built this entire infrastructure completely from scratch on a dedicated local machine. Every router, server, endpoint, and firewall rule was manually provisioned and configured to mimic a segmented, real-world enterprise environment.
+> **Self-Hosted Enterprise Lab (Cyber Range):** To truly understand Active Directory beyond just theoretical attacks, I built this entire infrastructure completely from scratch on a dedicated local machine. Every router, server, endpoint, and firewall rule was manually provisioned and configured to mimic a segmented, real-world enterprise environment.
 
 ### 🏗️ Infrastructure Architecture (Built from Scratch)
 * **Hypervisor & Networking:** Engineered a virtualized environment utilizing custom internal networks and isolated subnets.
