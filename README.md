@@ -1,14 +1,14 @@
 
 
-# 🔴 Advanced Active Directory Exploitation & Red Team Notes
+# 🔴 Advanced Active Directory Attack Simulation (Enterprice Lab)
 ![Red Team](https://img.shields.io/badge/Category-Red_Teaming-darkred?style=flat-square)
 ![Active Directory](https://img.shields.io/badge/Target-Active_Directory-blue?style=flat-square)
 ![OPSEC](https://img.shields.io/badge/OPSEC-Strict-green?style=flat-square)
 
 
-## 🔬 Enterprise Attack Simulation (Personal Home Lab)
+## 🔬 Enterprise Attack Simulation (Controlled Lab Environment)
 
-> **Self-Hosted Cyber Range:** To truly understand Active Directory beyond just theoretical attacks, I built this entire infrastructure completely from scratch on a dedicated local machine. Every router, server, endpoint, and firewall rule was manually provisioned and configured to mimic a segmented, real-world enterprise environment.
+> **Self-Hosted Enterprice Lab (Cyber Range):** To truly understand Active Directory beyond just theoretical attacks, I built this entire infrastructure completely from scratch on a dedicated local machine. Every router, server, endpoint, and firewall rule was manually provisioned and configured to mimic a segmented, real-world enterprise environment.
 
 ### 🏗️ Infrastructure Architecture (Built from Scratch)
 * **Hypervisor & Networking:** Engineered a virtualized environment utilizing custom internal networks and isolated subnets.
@@ -24,10 +24,6 @@
 5. **Lateral Movement:** Utilized WinRM and WMI (Living off the Land) to pivot across the network to the Domain Controller without dropping malicious binaries.
 6. **Domain Dominance:** Coerced DC authentication, extracted the `krbtgt` hash via DCSync, and established persistence.
 
-### 🛡️ Detection & SOC Telemetry (Blue Team Notes)
-* **Event ID 4769:** Monitored for suspicious Ticket Granting Service (TGS) requests (Kerberoasting activity).
-* **Event ID 4624 / 4625:** Tracked authentication anomalies and Logon Type 3 network logons during lateral movement.
-* **Event ID 4688:** Correlated process creation logs to identify malicious PowerShell/WMI spawning.
 
 ### 🗺️ Attack Flow (Kill Chain)
 
@@ -62,6 +58,10 @@ flowchart LR
 
 
 ```
+### 🛡️ Detection & SOC Telemetry (Blue Team Notes)
+* **Event ID 4769:** Monitored for suspicious Ticket Granting Service (TGS) requests (Kerberoasting activity).
+* **Event ID 4624 / 4625:** Tracked authentication anomalies and Logon Type 3 network logons during lateral movement.
+* **Event ID 4688:** Correlated process creation logs to identify malicious PowerShell/WMI spawning.
 
 -------------------------------------------------
 ## 📚 Detailed Notes
