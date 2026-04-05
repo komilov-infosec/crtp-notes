@@ -80,7 +80,7 @@ Unlike standard cheat sheets that rely heavily on dropping noisy binaries (e.g.,
 ```text
 AD-Offensive-Attack-Simulation/
 ├── README.md
-└── AD-Cheatsheet/
+└── notes/
     ├── 01-Enumeration.md          # Stealth ADSI, PowerView, BloodHound OPSEC
     ├── 02-Lateral-Movement.md     # DCOM, WinRM, WMI, Pass-the-Ticket
     ├── 03-Privilege-Escalation.md # LPE, ACL Abuse, Constrained/Unconstrained Delegation
