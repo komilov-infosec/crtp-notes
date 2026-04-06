@@ -13,7 +13,7 @@
 ### 🏗️ Infrastructure Architecture (Built from Scratch)
 * **Hypervisor & Networking:** Engineered a virtualized environment utilizing custom internal networks and isolated subnets.
 * **Network Boundary:** Manually deployed and configured a **pfSense** firewall to handle NAT, internal routing, and simulate corporate network segmentation (VLANs).
-* **Domain Controller:** `corp.local` (Windows Server 2022) - Manually promoted to a DC, populated with custom organizational units (OUs), Group Policies (GPOs), and realistic service accounts.
+* **Domain Controller:** `enterpriselab.local` (Windows Server 2022) - Manually promoted to a DC, populated with custom organizational units (OUs), Group Policies (GPOs), and realistic service accounts.
 * **Endpoints:** 2x Windows 10 Workstations - Joined to the domain with Windows Defender actively running to test real-world evasion techniques.
 
 ### ⚔️ Execution Flow (The Kill Chain)
