@@ -1,5 +1,5 @@
 
-# 🔍Active Directory Enumeration (Advanced Red Team )
+# 🔍Stealth AD Enumeration: Operational Security (OPSEC) Playbook for EDR Evasion 
 
 > **For lab environments, authorized penetration testing only.**
 > 
@@ -102,7 +102,7 @@ Invoke-EnumerateLocalAdmin -Verbose
 |---|---|---|---|
 |`net.exe` / `whoami.exe`|**High**|Event 4688 (Process Creation). Highly monitored by EDRs.|Use `[ADSI]` and `[System.Security.Principal.WindowsIdentity]`.|
 |SharpHound (`-c All`)|**High**|Massive LDAP traffic spike. Event 4624/4634 across all hosts.|Use `-c DCOnly` or targeted session enumeration.|
-|PowerView|**Medium**|Event 4104 (PowerShell Script Block Logging).|Obfuscate the script, patch AMSI, and rename variables.|
+|PowerView|**Medium**|Event 4104 (PowerShell Script Block Logging).|Reflectively load PowerView via Invoke-ReflectivePEInjection or modify the script to rename suspicious function names like Get-Net* to Get-File* to evade keyword-based EDR detections.|
 |Native ADSI (`[adsi]`)|**Very Low**|Blends in with normal domain LDAP queries.|N/A - The ultimate stealth enumeration method.|
 
 ---
