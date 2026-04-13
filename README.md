@@ -59,7 +59,7 @@ flowchart LR
 
 ```
 ### 🛡️ Detection & SOC Telemetry (Blue Team Notes)
-* **Event ID 4769:** Monitored for suspicious Ticket Granting Service (TGS) requests (Kerberoasting activity).
+* **Event ID 4769:** Monitored for suspicious Ticket Granting Service (TGS) requests (Kerberoasting activity).Bypassed this detection by requesting AES tickets only (-aes256) and limiting requests to accounts with SPN sets older than 30 days to mimic legacy application behavior.
 * **Event ID 4624 / 4625:** Tracked authentication anomalies and Logon Type 3 network logons during lateral movement.
 * **Event ID 4688:** Correlated process creation logs to identify malicious PowerShell/WMI spawning.
 
